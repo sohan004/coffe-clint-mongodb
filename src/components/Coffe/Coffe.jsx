@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import Swal from "sweetalert2";
 
 
@@ -48,9 +49,9 @@ const Coffe = (props) => {
                             <h5>Details: <span className="text-secondary">{details}</span></h5>
                         </div>
                     </div>
-                    <div className="text-center">
+                    <div className="text-center mt-3">
                         <button onClick={() => delet(_id)} className="btn btn-danger me-3 z-3">Delete</button>
-                        <button className="btn btn-info">Edit</button>
+                        <Link to={`/edit/${_id}`}><button className="btn btn-info">Edit</button></Link>
                     </div>
                 </div>
             </div>

@@ -5,6 +5,7 @@ import './index.css'
 import { RouterProvider, createBrowserRouter } from 'react-router-dom'
 import Home from './components/Home/Home.jsx'
 import Add from './components/Add/Add.jsx'
+import Edit from './components/Edit/Edit.jsx'
 
 const router = createBrowserRouter([
   {
@@ -18,6 +19,11 @@ const router = createBrowserRouter([
       {
         path: '/add_coffe',
         element: <Add></Add>
+      },
+      {
+        path: '/edit/:id',
+        element: <Edit></Edit>,
+        loader: ({ params }) => fetch(`http://localhost:5000/coffes/${params.id}`)
       },
     ]
   }
