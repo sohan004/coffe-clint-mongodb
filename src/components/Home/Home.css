@@ -1,0 +1,19 @@
+.banner{
+    background-image: url('../../assets/images/more/6.jpeg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.s2{
+background-color: rgb(241, 227, 208);
+}
+.addcoffe{
+    background-color: rgb(226, 202, 171);
+    border: 1px solid rgb(48, 43, 37);
+}
+.addcoffe:hover{
+    background-color: rgb(151, 138, 120);
+}
+.ban{
+    padding: 200px 0;
+}
